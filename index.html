@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETIAS for Brits – UK Citizens EU Travel Authorisation | ETA Permits</title>
+<meta name="description" content="Brits will need an ETIAS authorisation before travelling to Europe's Schengen Area. Apply online – fast, simple and secure. Expert review before every submission.">
+<meta name="google-site-verification" content="g00ix2W-2pdHXMC2bavwyGuYoCCaMJDEUrmi5lqnvc0" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#fdf6ed;
+  --crimson:#9b1c1c;
+  --dark:#2c1a1a;
+  --mid:#6b3a3a;
+  --border:#e8d5c4;
+  --white:#ffffff;
+  --light-bg:#f7efe3;
+  --eu-blue:#003399;
+  --eu-dark:#002277;
+  --eu-gold:#FFCC00;
+}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--dark);font-family:'Source Sans 3',sans-serif;line-height:1.7;font-size:16px}
+
+nav{background:var(--white);border-bottom:1.5px solid var(--border);padding:14px 48px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--crimson);text-decoration:none;letter-spacing:0.02em}
+.nav-sub{font-size:0.75rem;color:var(--mid);letter-spacing:0.1em;text-transform:uppercase;margin-top:2px}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:480px;overflow:hidden}
+.hero-right{background:var(--eu-blue);padding:72px 56px;display:flex;flex-direction:column;justify-content:center;order:2}
+.hero-left{position:relative;overflow:hidden;min-height:320px;order:1}
+.hero-left img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{display:inline-block;background:rgba(255,255,255,0.2);color:var(--white);font-size:0.7rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;padding:5px 14px;border-radius:2px;margin-bottom:20px;width:fit-content;border:1px solid rgba(255,255,255,0.3)}
+.hero-right h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:18px}
+.hero-right h1 em{color:var(--eu-gold);font-style:normal}
+.hero-right p{font-size:1rem;color:rgba(255,255,255,0.8);max-width:420px}
+
+.trust-bar{background:var(--eu-dark);padding:16px 48px}
+.trust-inner{max-width:1000px;margin:0 auto;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:0.82rem;font-weight:600;color:rgba(255,255,255,0.9);letter-spacing:0.05em}
+
+.content{max-width:960px;margin:0 auto;padding:0 48px}
+.section{padding:60px 0}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:var(--dark);margin-bottom:16px;line-height:1.2}
+h2 em{color:var(--eu-blue);font-style:normal}
+h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--eu-blue);margin-bottom:8px}
+p{color:var(--mid);margin-bottom:14px}
+p:last-child{margin-bottom:0}
+
+.divider{border:none;border-top:1px solid var(--border);max-width:960px;margin:0 auto}
+
+.facts-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.fact-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--eu-blue);border-radius:4px;padding:24px 20px;text-align:center}
+.fact-val{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--eu-blue);line-height:1}
+.fact-label{font-size:0.82rem;color:var(--mid);margin-top:6px;letter-spacing:0.04em}
+
+.who-section{background:var(--light-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:60px 0}
+.who-inner{max-width:960px;margin:0 auto;padding:0 48px}
+.who-link{color:var(--eu-blue);font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--eu-blue)}
+.who-link:hover{color:var(--eu-dark)}
+.who-note{background:var(--white);border:1px solid var(--border);border-left:3px solid var(--eu-blue);border-radius:3px;padding:16px 20px;margin-top:8px;font-size:0.92rem;color:var(--mid)}
+
+.countries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}
+.country-tag{background:var(--white);border:1px solid var(--border);border-radius:3px;padding:8px 12px;font-size:0.85rem;color:var(--mid);text-align:center}
+
+.steps-section{padding:60px 0}
+.steps-inner{max-width:960px;margin:0 auto;padding:0 48px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.steps::before{content:'';position:absolute;top:28px;left:calc(16.6% + 14px);right:calc(16.6% + 14px);height:2px;background:var(--border);z-index:0}
+.step{text-align:center;padding:0 16px;position:relative;z-index:1}
+.step-num{width:56px;height:56px;background:var(--eu-blue);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.4rem;margin:0 auto 16px;border:3px solid var(--cream)}
+.step h3{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--dark);margin-bottom:8px}
+.step p{font-size:0.88rem;color:var(--mid)}
+
+.split-section{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:60px 0}
+.split-img img{width:100%;height:100%;object-fit:cover;display:block;min-height:300px;border-radius:6px}
+
+.faq-section{background:var(--white);border-top:1px solid var(--border);padding:60px 0}
+.faq-inner{max-width:760px;margin:0 auto;padding:0 48px}
+.faq-inner h2{margin-bottom:32px}
+.faq-item{border-bottom:1px solid var(--border);padding:20px 0}
+.faq-item:first-of-type{border-top:1px solid var(--border)}
+.faq-q{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:8px}
+.faq-a{color:var(--mid);font-size:0.95rem;margin:0}
+
+.cta-section{padding:60px 48px;max-width:960px;margin:0 auto}
+.cta-block{background:var(--eu-blue);border-radius:6px;padding:60px 48px;text-align:center}
+.cta-block h2{color:var(--white);margin-bottom:12px}
+.cta-block p{color:rgba(255,255,255,0.8);max-width:480px;margin:0 auto 32px}
+.cta-outline{display:inline-block;border:2px solid var(--white);color:var(--white);font-family:'Cormorant Garamond',serif;font-size:1.1rem;padding:15px 44px;border-radius:3px;text-decoration:none;transition:all 0.25s}
+.cta-outline:hover{background:var(--white);color:var(--eu-blue)}
+
+footer{background:var(--light-bg);border-top:1.5px solid var(--border);padding:28px 48px;text-align:center;font-size:0.82rem;color:var(--mid)}
+footer a{color:var(--crimson);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.footer-links{display:flex;justify-content:center;gap:32px;margin-bottom:10px;flex-wrap:wrap}
+
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr}
+  .hero-left{display:none}
+  .hero-right{padding:48px 24px;order:1}
+  .split-section{grid-template-columns:1fr}
+  .facts-row{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:24px}
+  .steps::before{display:none}
+  .countries-grid{grid-template-columns:repeat(2,1fr)}
+  .content,.who-inner,.steps-inner,.faq-inner,.cta-section{padding-left:24px;padding-right:24px}
+  nav{padding:12px 20px}
+  footer{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div>
+    <a class="nav-brand" href="https://www.etapermits.com">ETA Permits</a>
+    <div class="nav-sub">United Kingdom &nbsp;·&nbsp; United States &nbsp;·&nbsp; Canada &nbsp;·&nbsp; European Union</div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-left">
+    <img src="france1.jpg" alt="Paris bridge at dusk">
+  </div>
+  <div class="hero-right">
+    <div class="badge">Brits · EU Travel Authorisation</div>
+    <h1>Brits will need an <em>ETIAS</em> to visit Europe</h1>
+    <p>The European Travel Information and Authorisation System (ETIAS) is an upcoming entry requirement for British passport holders travelling to the Schengen Area. Apply in advance — fast, secure, and expert-reviewed before submission.</p>
+  </div>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">✓ &nbsp;Expert Review</div>
+    <div class="trust-item">✓ &nbsp;Fast Processing</div>
+    <div class="trust-item">✓ &nbsp;Individuals &amp; Families</div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="section">
+    <h2>What is <em>ETIAS?</em></h2>
+    <p>ETIAS — the European Travel Information and Authorisation System — is a pre-travel authorisation being introduced by the European Union for nationals of visa-exempt countries, including British citizens. Post-Brexit, UK passport holders will no longer be able to enter Schengen Area countries without this prior authorisation.</p>
+    <p>ETIAS is not a visa. It is a quick online application that, once approved, is electronically linked to your British passport. It will be valid for three years or until your passport expires, and will allow multiple short stays across the 26 Schengen Area countries.</p>
+    <div class="facts-row">
+      <div class="fact-card">
+        <div class="fact-val">3 yrs</div>
+        <div class="fact-label">Validity period</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-val">90 days</div>
+        <div class="fact-label">Maximum stay per 180-day period</div>
+      </div>
+      <div class="fact-card">
+        <div class="fact-val">26</div>
+        <div class="fact-label">Schengen countries covered</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="who-section">
+  <div class="who-inner">
+    <h2>Which countries will require <em>ETIAS?</em></h2>
+    <p>ETIAS will cover all 26 countries in the Schengen Area. Whether you're heading to Paris for the weekend, skiing in Austria, or island-hopping in Greece — you'll need a valid ETIAS before you fly. Countries include:</p>
+    <div class="countries-grid">
+      <div class="country-tag">🇫🇷 France</div>
+      <div class="country-tag">🇩🇪 Germany</div>
+      <div class="country-tag">🇮🇹 Italy</div>
+      <div class="country-tag">🇪🇸 Spain</div>
+      <div class="country-tag">🇳🇱 Netherlands</div>
+      <div class="country-tag">🇬🇷 Greece</div>
+      <div class="country-tag">🇵🇹 Portugal</div>
+      <div class="country-tag">🇦🇹 Austria</div>
+      <div class="country-tag">🇨🇭 Switzerland</div>
+      <div class="country-tag">🇸🇪 Sweden</div>
+      <div class="country-tag">🇳🇴 Norway</div>
+      <div class="country-tag">🇵🇱 Poland</div>
+    </div>
+    <p style="margin-top:20px">Not sure if your destination requires ETIAS? <a class="who-link" href="https://www.etapermits.com">Visit ETA Permits</a> to check your eligibility and begin your application.</p>
+    <div class="who-note">
+      <strong>Important:</strong> ETIAS applies to air, land, and sea travel into the Schengen Area — unlike some travel authorisations which only apply to flights. If you're driving through France or taking a ferry to Spain, you'll still need a valid ETIAS.
+    </div>
+  </div>
+</div>
+
+<div class="steps-section">
+  <div class="steps-inner">
+    <h2>How to apply</h2>
+    <p style="color:var(--mid);margin-bottom:32px">Our simple three-step process ensures your ETIAS application is accurate and submitted correctly.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Complete the form</h3>
+        <p>Enter your personal details, UK passport information, and travel plans on our secure online form. Takes around 10 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Expert review</h3>
+        <p>Our team checks every application for accuracy before submission to the European Travel Information and Authorisation System — minimising errors and rejections.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Receive your ETIAS</h3>
+        <p>Your approved ETIAS is delivered by email and linked electronically to your passport. Simply present your passport at the border — no printed documents needed.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="content">
+  <div class="split-section">
+    <div>
+      <h2>Taking the family<br>to <em>Europe?</em></h2>
+      <p>Every traveller — including children — will require their own individual ETIAS linked to their own passport. ETA Permits makes it simple to submit applications for your whole family in one go, whether you're heading to one country or travelling across several.</p>
+      <p>Our team reviews all applications together before submission, ensuring nothing is missed before your trip. The price you see is the price you pay — no surprises at checkout.</p>
+    </div>
+    <div class="split-img">
+      <img src="italy.jpg" alt="Venice Grand Canal gondolas">
+    </div>
+  </div>
+</div>
+
+<div class="faq-section">
+  <div class="faq-inner">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <div class="faq-q">Do Brits need ETIAS after Brexit?</div>
+      <div class="faq-a">Yes. Following the UK's departure from the European Union, British citizens are now treated as third-country nationals when visiting the Schengen Area. Once ETIAS launches, UK passport holders will be required to obtain authorisation before every trip to Europe.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">When will ETIAS come into force?</div>
+      <div class="faq-a">ETIAS has been delayed several times but is expected to launch in 2025. It is being introduced alongside the EU Entry/Exit System (EES). We recommend applying as soon as ETIAS becomes available to avoid any last-minute disruption to your travel plans.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How long is ETIAS valid for British citizens?</div>
+      <div class="faq-a">ETIAS will be valid for three years from the date of issue, or until your passport expires — whichever comes first. It will allow multiple short stays across the Schengen Area during its validity period.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How long can Brits stay in Europe with ETIAS?</div>
+      <div class="faq-a">ETIAS permits stays of up to 90 days within any 180-day period across the Schengen Area as a whole — not per country. This is the same limit that currently applies to British visitors under the post-Brexit rules.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do British children need their own ETIAS?</div>
+      <div class="faq-a">Yes. Every traveller — including infants and children — will require their own individual ETIAS linked to their own passport. ETA Permits makes it straightforward to apply for all family members at once.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Does ETIAS cover all EU countries?</div>
+      <div class="faq-a">ETIAS covers the 26 Schengen Area countries, which includes most but not all EU member states. Ireland, for example, is not part of the Schengen Area and will not require ETIAS. Non-EU Schengen countries such as Norway, Switzerland, and Iceland are included.</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="cta-block">
+    <h2>Ready to apply for your ETIAS?</h2>
+    <p>Fast, simple and expert-reviewed. Get your European Travel Authorisation sorted before you travel — no last-minute stress.</p>
+    <a class="cta-outline" href="https://www.etapermits.com">Begin your Journey…</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://www.etapermits.com/privacy">Privacy Policy</a>
+    <a href="https://www.etapermits.com/terms">Terms &amp; Conditions</a>
+    <a href="mailto:info@etapermits.com">info@etapermits.com</a>
+  </div>
+  <div>© 2026 ETA Permits. All rights reserved. &nbsp;|&nbsp; This is an independent application assistance service and is not affiliated with any government body.</div>
+</footer>
+
+</body>
+</html>
